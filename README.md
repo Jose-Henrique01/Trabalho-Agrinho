@@ -1,9 +1,6 @@
-# Projeto-Agrinho 2026
 # 🌾 AgroSustentável - Agrinho 2026
 
 **Tema oficial:** "Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente"
-
-Projeto submetido à **Categoria Programação** do Concurso Agrinho 2026, em conformidade integral com o regulamento da edição.
 
 ---
 
@@ -23,8 +20,8 @@ Este projeto atende estritamente às exigências da categoria:
 
 | Arquivo | Função |
 |----------|--------|
-| `index.html` | Página inicial com informações sobre o tema, galeria de imagens (máquinas no campo, plantações e força do agro) e botões de acesso ao simulador. |
-| `dashboard.html` | Simulador interativo de sustentabilidade: o usuário informa as áreas de produção e preservação e recebe diagnóstico baseado na meta de 20% de reserva legal. |
+| `dashboard.html` | Página inicial com informações sobre o tema, galeria de imagens (máquinas no campo, plantações e força do agro) e botões de acesso ao simulador. |
+| `index.html` | Simulador interativo de sustentabilidade: o usuário informa as áreas de produção e preservação e recebe diagnóstico baseado na meta de 20% de reserva legal. |
 | `README.md` | Documentação do projeto. |
 
 ---
@@ -66,16 +63,6 @@ O **AgroSustentável** é uma ferramenta educativa e interativa que demonstra co
 - **JavaScript (Vanilla)** – manipulação do DOM, eventos, cálculos e atualização dinâmica da interface.
 
 Nenhuma dependência externa foi empregada, mantendo o código leve, autoral e completamente alinhado às regras do concurso.
-
----
-
-## 📸 Demonstração Visual
-
-_(Para personalizar, substitua os links pelas capturas de tela do seu projeto)_
-
-| Página Inicial | Simulador |
-|----------------|-----------|
-| ![Tela inicial](screenshots/index.png) | ![Dashboard](screenshots/dashboard.png) |
 
 ---
 
