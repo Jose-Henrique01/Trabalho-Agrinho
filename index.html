@@ -1,104 +1,224 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Agrinho 2026 - Dashboard de Sustentabilidade</title>
-  <style>
-
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="description" content="Site sobre computação aplicada ao agronegócio sustentável - Tecnologia e inovação no campo.">
+    <meta name="author" content="Aluno participante">
+    <title>Computação no Campo | Tecnologia Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="dashboard">
-    <h1>🌾 AgroSustentável</h1>
-    <p class="subtitulo">
-      Tema: "Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente"
-    </p>
+    <header class="header" id="topo">
+        <div class="container header-container">
+            <div class="logo">
+                <h1>🌾 Campo <span>Digital</span></h1>
+                <p class="sub-logo">Computação & Sustentabilidade</p>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#tecnologias">Tecnologias</a></li>
+                    <li><a href="#beneficios">Benefícios</a></li>
+                    <li><a href="#estatisticas">Estatísticas</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <div class="input-group">
-      <label for="producao">🌱 Área de Produção (hectares)</label>
-      <input type="number" id="producao" placeholder="Ex: 80" min="0" step="0.01" required>
-    </div>
+    <main>
+        <!-- Seção Hero / Início -->
+        <section id="inicio" class="hero">
+            <div class="container hero-container">
+                <div class="hero-text">
+                    <h2>O futuro do campo<br>é <span class="destaque">digital e sustentável</span></h2>
+                    <p>Descubra como a computação está revolucionando o agronegócio, aumentando a produtividade e preservando o meio ambiente.</p>
+                    <a href="#tecnologias" class="btn-primary">Explorar soluções →</a>
+                </div>
+                <div class="hero-image">
+                    <svg width="500" height="400" viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg" style="border-radius:24px; background:#e9f5e9;">
+                        <rect width="500" height="400" fill="#2d6a4f" rx="20"/>
+                        <text x="250" y="180" font-family="Inter, sans-serif" font-size="24" fill="white" text-anchor="middle" font-weight="bold">🚁 DRONE</text>
+                        <text x="250" y="220" font-family="Inter, sans-serif" font-size="16" fill="#d4e2d4" text-anchor="middle">Monitoramento aéreo de lavouras</text>
+                        <circle cx="250" cy="300" r="8" fill="#f4e3c2"/>
+                        <line x1="100" y1="350" x2="400" y2="350" stroke="#d4a373" stroke-width="4" stroke-dasharray="8 4"/>
+                        <text x="250" y="380" font-family="Inter" font-size="12" fill="#f4e3c2" text-anchor="middle">Sensores, GPS e inteligência artificial</text>
+                    </svg>
+                </div>
+            </div>
+        </section>
 
-    <div class="input-group">
-      <label for="preservacao">🌳 Área de Preservação (hectares)</label>
-      <input type="number" id="preservacao" placeholder="Ex: 25" min="0" step="0.01" required>
-    </div>
+        <!-- Seção Tecnologias -->
+        <section id="tecnologias" class="tecnologias">
+            <div class="container">
+                <div class="section-header">
+                    <h2>⚙️ Tecnologias que transformam</h2>
+                    <p>Conheça as principais áreas da computação aplicadas ao agronegócio.</p>
+                </div>
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-icon">🌾</div>
+                        <h3>Agricultura de Precisão</h3>
+                        <p>Sensores, GPS e imagens de satélite para monitorar lavouras em tempo real, aplicando insumos de forma localizada.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🤖</div>
+                        <h3>Inteligência Artificial</h3>
+                        <p>Algoritmos que identificam pragas, doenças e preveem safras com alta precisão, reduzindo perdas.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">📡</div>
+                        <h3>Internet das Coisas (IoT)</h3>
+                        <p>Estações meteorológicas e drones conectados coletam dados de solo, clima e plantas 24h por dia.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">📊</div>
+                        <h3>Big Data & Analytics</h3>
+                        <p>Análise de grandes volumes de dados históricos para tomada de decisão mais eficiente e sustentável.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <button id="calcularBtn">📊 Verificar Sustentabilidade</button>
+        <!-- Seção Benefícios -->
+        <section id="beneficios" class="beneficios">
+            <div class="container">
+                <div class="section-header">
+                    <h2>🌍 Benefícios para o campo e o planeta</h2>
+                    <p>A computação verde e a agricultura inteligente caminham juntas.</p>
+                </div>
+                <div class="benefits-list">
+                    <div class="benefit-item">
+                        <div class="benefit-number">01</div>
+                        <div class="benefit-content">
+                            <h3>Redução de desperdícios</h3>
+                            <p>Uso otimizado de água, fertilizantes e defensivos, diminuindo impacto ambiental.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-number">02</div>
+                        <div class="benefit-content">
+                            <h3>Aumento da produtividade</h3>
+                            <p>Monitoramento contínuo permite agir rapidamente contra ameaças à lavoura.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-number">03</div>
+                        <div class="benefit-content">
+                            <h3>Sustentabilidade econômica</h3>
+                            <p>Redução de custos e maior rentabilidade para pequenos e médios produtores.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-number">04</div>
+                        <div class="benefit-content">
+                            <h3>Rastreabilidade total</h3>
+                            <p>Da semente à mesa, blockchain e sensores garantem origem e qualidade dos alimentos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <div id="resultado" class="resultado" style="display: none;"></div>
+        <!-- NOVA SEÇÃO: Estatísticas do Agro Digital -->
+        <section id="estatisticas" class="estatisticas">
+            <div class="container">
+                <div class="section-header">
+                    <h2>📈 Números que comprovam a revolução digital</h2>
+                    <p>Dados reais mostram o impacto positivo da tecnologia no campo.</p>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">+30%</div>
+                        <div class="stat-label">Economia de água</div>
+                        <div class="stat-desc">Com irrigação inteligente e sensores de umidade</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">25%</div>
+                        <div class="stat-label">Aumento de produtividade</div>
+                        <div class="stat-desc">Com agricultura de precisão e análise de dados</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">-40%</div>
+                        <div class="stat-label">Redução de fertilizantes</div>
+                        <div class="stat-desc">Aplicação localizada via mapeamento por satélite</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">85%</div>
+                        <div class="stat-label">Produtores adotam IoT</div>
+                        <div class="stat-desc">Em grandes propriedades até 2025 (projeção)</div>
+                    </div>
+                </div>
+                <p class="stats-fonte">Fonte: Embrapa / McKinsey Agro 2025 (dados simulados para projeto educacional)</p>
+            </div>
+        </section>
 
-    <div class="metricas" style="display: none;" id="metricasContainer">
-      <div class="metrica">
-        <span id="totalHa">0</span>
-        <small>Área Total (ha)</small>
-      </div>
-      <div class="metrica">
-        <span id="percentualPreservacao">0%</span>
-        <small>Percentual de Preservação</small>
-      </div>
-    </div>
-  </div>
+        <!-- Seção Galeria -->
+        <section id="galeria" class="galeria">
+            <div class="container">
+                <div class="section-header">
+                    <h2>📸 Tecnologia em ação no campo</h2>
+                    <p>Veja como a inovação está presente no dia a dia do agronegócio.</p>
+                </div>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <svg width="100%" height="250" viewBox="0 0 400 250" preserveAspectRatio="none" style="background: linear-gradient(145deg, #1e5631, #2d6a4f); display:block;">
+                            <text x="200" y="100" font-family="Inter, sans-serif" font-size="48" text-anchor="middle" fill="white">🚁</text>
+                            <text x="200" y="150" font-family="Inter, sans-serif" font-size="18" text-anchor="middle" fill="#f4e3c2" font-weight="bold">Drone Agrícola</text>
+                            <text x="200" y="180" font-family="Inter, sans-serif" font-size="12" text-anchor="middle" fill="#cfe3cf">Mapeamento e pulverização de precisão</text>
+                        </svg>
+                        <div class="gallery-caption">Monitoramento aéreo com drones</div>
+                    </div>
+                    <div class="gallery-item">
+                        <svg width="100%" height="250" viewBox="0 0 400 250" preserveAspectRatio="none" style="background: linear-gradient(145deg, #3b5e2b, #1b4d3e); display:block;">
+                            <text x="200" y="100" font-family="Inter, sans-serif" font-size="48" text-anchor="middle" fill="white">📡🌱</text>
+                            <text x="200" y="150" font-family="Inter, sans-serif" font-size="18" text-anchor="middle" fill="#f4e3c2" font-weight="bold">Sensores IoT no Solo</text>
+                            <text x="200" y="180" font-family="Inter, sans-serif" font-size="12" text-anchor="middle" fill="#cfe3cf">Umidade, temperatura e nutrientes em tempo real</text>
+                        </svg>
+                        <div class="gallery-caption">Sensores IoT conectados</div>
+                    </div>
+                    <div class="gallery-item">
+                        <svg width="100%" height="250" viewBox="0 0 400 250" preserveAspectRatio="none" style="background: linear-gradient(145deg, #2c3e2b, #1e3a2f); display:block;">
+                            <text x="200" y="80" font-family="Inter, sans-serif" font-size="48" text-anchor="middle" fill="white">📊</text>
+                            <text x="200" y="130" font-family="Inter, sans-serif" font-size="16" text-anchor="middle" fill="#f4e3c2" font-weight="bold">Dashboard Inteligente</text>
+                            <text x="200" y="160" font-family="Inter, sans-serif" font-size="11" text-anchor="middle" fill="#cfe3cf">Gráficos de produtividade e previsão de safra</text>
+                            <rect x="100" y="190" width="30" height="20" fill="#d4a373" rx="3"/>
+                            <rect x="145" y="175" width="30" height="35" fill="#d4a373" rx="3"/>
+                            <rect x="190" y="200" width="30" height="10" fill="#d4a373" rx="3"/>
+                            <rect x="235" y="165" width="30" height="45" fill="#d4a373" rx="3"/>
+                            <rect x="280" y="185" width="30" height="25" fill="#d4a373" rx="3"/>
+                        </svg>
+                        <div class="gallery-caption">Análise de dados em tempo real</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-  <script>
-    const producaoInput = document.getElementById('producao');
-    const preservacaoInput = document.getElementById('preservacao');
-    const calcularBtn = document.getElementById('calcularBtn');
-    const resultadoDiv = document.getElementById('resultado');
-    const metricasContainer = document.getElementById('metricasContainer');
-    const totalHaSpan = document.getElementById('totalHa');
-    const percentualPreservacaoSpan = document.getElementById('percentualPreservacao');
-
-    function analisarSustentabilidade() {
-      const producao = parseFloat(producaoInput.value);
-      const preservacao = parseFloat(preservacaoInput.value);
-
-      if (isNaN(producao) || isNaN(preservacao) || producao < 0 || preservacao < 0) {
-        resultadoDiv.style.display = 'block';
-        resultadoDiv.className = 'resultado alerta';
-        resultadoDiv.textContent = '⚠️ Por favor, insira valores válidos (números positivos).';
-        metricasContainer.style.display = 'none';
-        return;
-      }
-
-      const areaTotal = producao + preservacao;
-      const percentualPreservacao = (preservacao / areaTotal) * 100;
-      const metaSustentavel = 20; // Meta de 20% de reserva legal
-
-      // Atualiza métricas
-      totalHaSpan.textContent = areaTotal.toFixed(1);
-      percentualPreservacaoSpan.textContent = percentualPreservacao.toFixed(1) + '%';
-      metricasContainer.style.display = 'flex';
-
-      // Feedback visual
-      resultadoDiv.style.display = 'block';
-      if (percentualPreservacao >= metaSustentavel) {
-        resultadoDiv.className = 'resultado sucesso';
-        resultadoDiv.innerHTML = `
-          <strong>✅ Parabéns! Sua propriedade está no caminho certo!</strong><br>
-          A área de preservação (${percentualPreservacao.toFixed(1)}%) atende à meta de ${metaSustentavel}% recomendada.<br>
-          Isso contribui para um <strong>agro forte e um futuro sustentável</strong>.
-        `;
-      } else {
-        resultadoDiv.className = 'resultado alerta';
-        resultadoDiv.innerHTML = `
-          <strong>⚠️ Atenção! É preciso aumentar a área de preservação.</strong><br>
-          Atualmente, apenas ${percentualPreservacao.toFixed(1)}% da área total é destinada à preservação.<br>
-          A meta recomendada é de <strong>${metaSustentavel}%</strong>. Que tal planejar o reflorestamento de parte da sua terra?
-        `;
-      }
-    }
-
-    calcularBtn.addEventListener('click', analisarSustentabilidade);
-
-    // Permite também calcular pressionando Enter
-    producaoInput.addEventListener('keypress', function(e) {
-      if (e.key === 'Enter') analisarSustentabilidade();
-    });
-    preservacaoInput.addEventListener('keypress', function(e) {
-      if (e.key === 'Enter') analisarSustentabilidade();
-    });
-  </script>
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-logo">
+                <h2>🌾 Campo Digital</h2>
+                <p>Computação, inovação e responsabilidade socioambiental.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#tecnologias">Tecnologias</a></li>
+                    <li><a href="#beneficios">Benefícios</a></li>
+                    <li><a href="#estatisticas">Estatísticas</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                </ul>
+            </div>
+            <div class="footer-legal">
+                <h4>Sobre o projeto</h4>
+                <p>Site desenvolvido para demonstrar o uso da computação no agronegócio sustentável – alinhado às diretrizes de inovação e responsabilidade ambiental.</p>
+                <small>© 2026 – Todos os direitos reservados. Site estático sem back-end.</small>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
