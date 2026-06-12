@@ -4,18 +4,6 @@
 
 ---
 
-## ✅ Conformidade com o Regulamento
-
-Este projeto atende estritamente às exigências da categoria:
-
-- **Tecnologias permitidas:** utiliza apenas **HTML5, CSS3 e JavaScript puro** (sem back-end, frameworks ou bibliotecas externas).
-- **Tema central:** aborda diretamente o equilíbrio entre produção agropecuária e preservação ambiental.
-- **Responsividade:** o layout adapta-se a celulares, tablets e desktops por meio de media queries e unidades flexíveis.
-- **Pensamento computacional:** simula um cenário real de tomada de decisão sustentável, automatizando cálculos e gerando feedback instantâneo.
-- **Originalidade:** código autoral, desenvolvido especificamente para esta edição do concurso.
-
----
-
 ## 📂 Estrutura do Repositório
 
 | Arquivo | Função |
