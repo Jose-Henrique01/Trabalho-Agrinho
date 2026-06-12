@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agrinho 2026 - Dashboard de Sustentabilidade</title>
+  <style>
+
+  </style>
+</head>
+<body>
+  <div class="dashboard">
+    <h1>🌾 AgroSustentável</h1>
+    <p class="subtitulo">
+      Tema: "Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente"
+    </p>
+
+    <div class="input-group">
+      <label for="producao">🌱 Área de Produção (hectares)</label>
+      <input type="number" id="producao" placeholder="Ex: 80" min="0" step="0.01" required>
+    </div>
+
+    <div class="input-group">
+      <label for="preservacao">🌳 Área de Preservação (hectares)</label>
+      <input type="number" id="preservacao" placeholder="Ex: 25" min="0" step="0.01" required>
+    </div>
+
+    <button id="calcularBtn">📊 Verificar Sustentabilidade</button>
+
+    <div id="resultado" class="resultado" style="display: none;"></div>
+
+    <div class="metricas" style="display: none;" id="metricasContainer">
+      <div class="metrica">
+        <span id="totalHa">0</span>
+        <small>Área Total (ha)</small>
+      </div>
+      <div class="metrica">
+        <span id="percentualPreservacao">0%</span>
+        <small>Percentual de Preservação</small>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const producaoInput = document.getElementById('producao');
+    const preservacaoInput = document.getElementById('preservacao');
+    const calcularBtn = document.getElementById('calcularBtn');
+    const resultadoDiv = document.getElementById('resultado');
+    const metricasContainer = document.getElementById('metricasContainer');
+    const totalHaSpan = document.getElementById('totalHa');
+    const percentualPreservacaoSpan = document.getElementById('percentualPreservacao');
+
+    function analisarSustentabilidade() {
+      const producao = parseFloat(producaoInput.value);
+      const preservacao = parseFloat(preservacaoInput.value);
+
+      if (isNaN(producao) || isNaN(preservacao) || producao < 0 || preservacao < 0) {
+        resultadoDiv.style.display = 'block';
+        resultadoDiv.className = 'resultado alerta';
+        resultadoDiv.textContent = '⚠️ Por favor, insira valores válidos (números positivos).';
+        metricasContainer.style.display = 'none';
+        return;
+      }
+
+      const areaTotal = producao + preservacao;
+      const percentualPreservacao = (preservacao / areaTotal) * 100;
+      const metaSustentavel = 20; // Meta de 20% de reserva legal
+
+      // Atualiza métricas
+      totalHaSpan.textContent = areaTotal.toFixed(1);
+      percentualPreservacaoSpan.textContent = percentualPreservacao.toFixed(1) + '%';
+      metricasContainer.style.display = 'flex';
+
+      // Feedback visual
+      resultadoDiv.style.display = 'block';
+      if (percentualPreservacao >= metaSustentavel) {
+        resultadoDiv.className = 'resultado sucesso';
+        resultadoDiv.innerHTML = `
+          <strong>✅ Parabéns! Sua propriedade está no caminho certo!</strong><br>
+          A área de preservação (${percentualPreservacao.toFixed(1)}%) atende à meta de ${metaSustentavel}% recomendada.<br>
+          Isso contribui para um <strong>agro forte e um futuro sustentável</strong>.
+        `;
+      } else {
+        resultadoDiv.className = 'resultado alerta';
+        resultadoDiv.innerHTML = `
+          <strong>⚠️ Atenção! É preciso aumentar a área de preservação.</strong><br>
+          Atualmente, apenas ${percentualPreservacao.toFixed(1)}% da área total é destinada à preservação.<br>
+          A meta recomendada é de <strong>${metaSustentavel}%</strong>. Que tal planejar o reflorestamento de parte da sua terra?
+        `;
+      }
+    }
+
+    calcularBtn.addEventListener('click', analisarSustentabilidade);
+
+    // Permite também calcular pressionando Enter
+    producaoInput.addEventListener('keypress', function(e) {
+      if (e.key === 'Enter') analisarSustentabilidade();
+    });
+    preservacaoInput.addEventListener('keypress', function(e) {
+      if (e.key === 'Enter') analisarSustentabilidade();
+    });
+  </script>
+</body>
+</html>
