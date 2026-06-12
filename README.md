@@ -14,6 +14,15 @@
 
 ---
 
+## 🧒 Autoria e Ajuda
+
+**Aluno:** [José Henrique Rodrigues]
+**Escola:** [Colégio Estadual Castro Alves]
+**Turma:** [1ºano]
+
+Este trabalho teve ajuda com o apoio da inteligência artificial (ChatGPT)
+
+---
 ## 🚀 Como Executar (sem instalação)
 
 1. Faça o download ou clone este repositório.
