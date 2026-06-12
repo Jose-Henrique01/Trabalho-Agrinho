@@ -17,7 +17,9 @@
 ## 🧒 Autoria e Ajuda
 
 **Aluno:** [José Henrique Rodrigues]
+
 **Escola:** [Colégio Estadual Castro Alves]
+
 **Turma:** [1ºano]
 
 Este trabalho teve ajuda com o apoio da inteligência artificial (ChatGPT)
